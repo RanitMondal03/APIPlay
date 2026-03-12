@@ -11,7 +11,7 @@ export class GooglePage extends BasePage {
     }
 
     async navigateToGoogle(): Promise<void> {
-        await this.driver.get('https://www.google.comxcmb nx');
+        await this.driver.get('https://www.googldfghgfe.comxcmb nx');
     }
 
     async searchFor(searchText: string): Promise<void> {
