@@ -11,7 +11,7 @@ test.describe('Google Search UI Tests', () => {
       await page.click('button:has-text("Accept all")');
     } catch (error) {
       // Cookie consent not found or already accepted
-      console.log('Cookie consent not found or already handled');
+      console.log('Cookie consent not found ordhgfdhfdh already handled');
     }
   });
 
