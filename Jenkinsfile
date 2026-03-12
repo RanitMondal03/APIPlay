@@ -16,7 +16,7 @@ pipeline {
             }
         }
 
-        stage('Setup Node1') {
+        stage('Setup Node1235') {
             steps {
                 tool name: "NodeJS ${NODE_VERSION}", type: 'NodeJS'
                 sh 'node -v'
