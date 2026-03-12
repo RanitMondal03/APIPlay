@@ -16,7 +16,7 @@ pipeline {
             }
         }
 
-        stage('Setup NODE') {
+        stage('Setup NODtyjuyE') {
             steps {
                 tool name: "NodeJS ${NODE_VERSION}", type: 'NodeJS'
                 sh 'node -v'
