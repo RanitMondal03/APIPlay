@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\HELLO\\playwright.config.ts",
-    "rootDir": "D:/HELLO/src/tests",
+    "configFile": "C:\\MY\\APIPlay\\playwright.config.ts",
+    "rootDir": "C:/MY/APIPlay/src/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 8
     },
     "preserveOutput": "always",
     "reporter": [
@@ -33,15 +33,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "D:/HELLO/test-results",
+        "outputDir": "C:/MY/APIPlay/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 8
         },
         "id": "",
         "name": "",
-        "testDir": "D:/HELLO/src/tests",
+        "testDir": "C:/MY/APIPlay/src/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -53,7 +53,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.55.0",
-    "workers": 4,
+    "workers": 8,
     "webServer": null
   },
   "suites": [
@@ -86,12 +86,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 11087,
+                      "duration": 10599,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('textarea[name=\"q1\"]')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[name=\"q1\"]')\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('textarea[name=\"q1\"]')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[name=\"q1\"]')\u001b[22m\n\n    at D:\\HELLO\\src\\tests\\demoUI.spec.ts:24:31",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('textarea[name=\"q1\"]')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[name=\"q1\"]')\u001b[22m\n\n    at C:\\MY\\APIPlay\\src\\tests\\demoUI.spec.ts:24:31",
                         "location": {
-                          "file": "D:\\HELLO\\src\\tests\\demoUI.spec.ts",
+                          "file": "C:\\MY\\APIPlay\\src\\tests\\demoUI.spec.ts",
                           "column": 31,
                           "line": 24
                         },
@@ -100,11 +100,11 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "D:\\HELLO\\src\\tests\\demoUI.spec.ts",
+                            "file": "C:\\MY\\APIPlay\\src\\tests\\demoUI.spec.ts",
                             "column": 31,
                             "line": 24
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('textarea[name=\"q1\"]')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[name=\"q1\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 22 |\u001b[39m     \u001b[90m// Verify search input is visible\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'textarea[name=\"q1\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m searchInput\u001b[33m.\u001b[39mfill(\u001b[32m'Playwright Testing'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\HELLO\\src\\tests\\demoUI.spec.ts:24:31\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('textarea[name=\"q1\"]')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[name=\"q1\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 22 |\u001b[39m     \u001b[90m// Verify search input is visible\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'textarea[name=\"q1\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m searchInput\u001b[33m.\u001b[39mfill(\u001b[32m'Playwright Testing'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\demoUI.spec.ts:24:31\u001b[22m"
                         }
                       ],
                       "stdout": [
@@ -114,17 +114,17 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:05.848Z",
+                      "startTime": "2026-03-12T09:02:55.214Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "D:\\HELLO\\test-results\\demoUI-Google-Search-UI-Tests-should-load-Google-homepage\\error-context.md"
+                          "path": "C:\\MY\\APIPlay\\test-results\\demoUI-Google-Search-UI-Tests-should-load-Google-homepage\\error-context.md"
                         }
                       ],
                       "errorLocation": {
-                        "file": "D:\\HELLO\\src\\tests\\demoUI.spec.ts",
+                        "file": "C:\\MY\\APIPlay\\src\\tests\\demoUI.spec.ts",
                         "column": 31,
                         "line": 24
                       }
@@ -157,7 +157,7 @@
           "specs": [
             {
               "title": "should create a new user",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -170,25 +170,42 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 537,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[Create Test] Successfully created user with ID: 8091900\n"
+                      "status": "failed",
+                      "duration": 1048,
+                      "error": {
+                        "message": "APIError: API Error: Internal Server Error",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:32:29",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "column": 23,
+                          "line": 61
                         },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
                         {
-                          "text": "[Create Test] Cleaned up - deleted user with ID: 8091900\n"
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "column": 23,
+                            "line": 61
+                          },
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:32:29\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:05.918Z",
+                      "startTime": "2026-03-12T09:02:55.232Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "column": 23,
+                        "line": 61
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "dcfd79285af820ef35c1-364a35560cadf55c8b22",
@@ -198,7 +215,7 @@
             },
             {
               "title": "should get user by ID",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -211,28 +228,42 @@
                     {
                       "workerIndex": 2,
                       "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 557,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[Helper] Created test user with ID: 8091899\n"
+                      "status": "failed",
+                      "duration": 1185,
+                      "error": {
+                        "message": "APIError: API Error: Internal Server Error",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:47:24",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "column": 23,
+                          "line": 61
                         },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
                         {
-                          "text": "[Get Test] Successfully retrieved user with ID: 8091899\n"
-                        },
-                        {
-                          "text": "[Get Test] Cleaned up - deleted user with ID: 8091899\n"
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "column": 23,
+                            "line": 61
+                          },
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:47:24\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:05.964Z",
+                      "startTime": "2026-03-12T09:02:55.235Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "column": 23,
+                        "line": 61
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "dcfd79285af820ef35c1-49868812b4dffa687412",
@@ -242,7 +273,7 @@
             },
             {
               "title": "should update user details",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -255,31 +286,42 @@
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 524,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[Helper] Created test user with ID: 8091901\n"
+                      "status": "failed",
+                      "duration": 1325,
+                      "error": {
+                        "message": "APIError: API Error: Internal Server Error",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:63:24",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "column": 23,
+                          "line": 61
                         },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
                         {
-                          "text": "[Update Test] Successfully updated user with ID: 8091901\n"
-                        },
-                        {
-                          "text": "[Update Test] New name: Updated Test User, New status: inactive\n"
-                        },
-                        {
-                          "text": "[Update Test] Cleaned up - deleted user with ID: 8091901\n"
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "column": 23,
+                            "line": 61
+                          },
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:63:24\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:06.020Z",
+                      "startTime": "2026-03-12T09:02:55.257Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "column": 23,
+                        "line": 61
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "dcfd79285af820ef35c1-af4361f288a02d725886",
@@ -289,7 +331,7 @@
             },
             {
               "title": "should delete a user",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -300,33 +342,44 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 421,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[Helper] Created test user with ID: 8091902\n"
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 1030,
+                      "error": {
+                        "message": "APIError: API Error: Internal Server Error",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:84:24",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "column": 23,
+                          "line": 61
                         },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
                         {
-                          "text": "[Delete Test] Attempting to delete user with ID: 8091902\n"
-                        },
-                        {
-                          "text": "[Delete Test] Successfully deleted user\n"
-                        },
-                        {
-                          "text": "[Delete Test] Verified user 8091902 no longer exists in DB\n"
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "column": 23,
+                            "line": 61
+                          },
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:84:24\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:06.537Z",
+                      "startTime": "2026-03-12T09:02:55.262Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "column": 23,
+                        "line": 61
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "dcfd79285af820ef35c1-682cad14c60f56442484",
@@ -353,7 +406,7 @@
           "specs": [
             {
               "title": "should fail to create user with invalid email format",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -364,30 +417,54 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 135,
-                      "errors": [],
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 1021,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m422\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m422\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:23:45",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                          "column": 45,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Details:'\u001b[39m\u001b[33m,\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(errorBody\u001b[33m,\u001b[39m \u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m             \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m422\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m             expect(errorBody[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mfield)\u001b[33m.\u001b[39mtoBe(\u001b[32m'email'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m             expect(errorBody[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'invalid'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m         }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                            "column": 45,
+                            "line": 23
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m422\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 21 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Details:'\u001b[39m\u001b[33m,\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(errorBody\u001b[33m,\u001b[39m \u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m             \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m422\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m             expect(errorBody[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mfield)\u001b[33m.\u001b[39mtoBe(\u001b[32m'email'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m             expect(errorBody[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'invalid'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m         }\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:23:45\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "\n[Negative Test] Create user with invalid email failed as expected\n"
                         },
                         {
-                          "text": "Error Status: \u001b[33m422\u001b[39m\n"
+                          "text": "Error Status: \u001b[33m500\u001b[39m\n"
                         },
                         {
-                          "text": "Error Details: [\n  {\n    \"field\": \"email\",\n    \"message\": \"is invalid\"\n  }\n]\n"
+                          "text": "Error Details: {\n  \"status\": 500,\n  \"error\": \"Internal Server Error\"\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:06.631Z",
+                      "startTime": "2026-03-12T09:02:55.257Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                        "column": 45,
+                        "line": 23
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "17fc41568215779711a6-7e8353cb24b69172e6e6",
@@ -397,7 +474,7 @@
             },
             {
               "title": "should fail to create user with missing required fields",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -408,33 +485,54 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 125,
-                      "errors": [],
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 1289,
+                      "error": {
+                        "message": "TypeError: errorBody.map is not a function",
+                        "stack": "TypeError: errorBody.map is not a function\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:43:54",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                          "column": 54,
+                          "line": 43
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 41 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Status:'\u001b[39m\u001b[33m,\u001b[39m error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Response:'\u001b[39m\u001b[33m,\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(errorBody\u001b[33m,\u001b[39m \u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Missing Fields:'\u001b[39m\u001b[33m,\u001b[39m errorBody\u001b[33m.\u001b[39mmap((err\u001b[33m:\u001b[39m any) \u001b[33m=>\u001b[39m err\u001b[33m.\u001b[39mfield)\u001b[33m.\u001b[39mjoin(\u001b[32m', '\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m             \n \u001b[90m 45 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m422\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m             expect(errorBody)\u001b[33m.\u001b[39mtoContainEqual(expect\u001b[33m.\u001b[39mobjectContaining({\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                            "column": 54,
+                            "line": 43
+                          },
+                          "message": "TypeError: errorBody.map is not a function\n\n\u001b[0m \u001b[90m 41 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Status:'\u001b[39m\u001b[33m,\u001b[39m error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Response:'\u001b[39m\u001b[33m,\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(errorBody\u001b[33m,\u001b[39m \u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Missing Fields:'\u001b[39m\u001b[33m,\u001b[39m errorBody\u001b[33m.\u001b[39mmap((err\u001b[33m:\u001b[39m any) \u001b[33m=>\u001b[39m err\u001b[33m.\u001b[39mfield)\u001b[33m.\u001b[39mjoin(\u001b[32m', '\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m             \n \u001b[90m 45 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m422\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m             expect(errorBody)\u001b[33m.\u001b[39mtoContainEqual(expect\u001b[33m.\u001b[39mobjectContaining({\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:43:54\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "\n[Negative Test] Create user with missing fields failed as expected\n"
                         },
                         {
-                          "text": "Error Status: \u001b[33m422\u001b[39m\n"
+                          "text": "Error Status: \u001b[33m500\u001b[39m\n"
                         },
                         {
-                          "text": "Error Response: [\n  {\n    \"field\": \"email\",\n    \"message\": \"can't be blank\"\n  },\n  {\n    \"field\": \"gender\",\n    \"message\": \"can't be blank, can be male of female\"\n  },\n  {\n    \"field\": \"status\",\n    \"message\": \"can't be blank\"\n  }\n]\n"
-                        },
-                        {
-                          "text": "Missing Fields: email, gender, status\n"
+                          "text": "Error Response: {\n  \"status\": 500,\n  \"error\": \"Internal Server Error\"\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:06.636Z",
+                      "startTime": "2026-03-12T09:02:55.274Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                        "column": 54,
+                        "line": 43
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "17fc41568215779711a6-52206458bf0aeb9d775d",
@@ -444,7 +542,7 @@
             },
             {
               "title": "should fail to get user with non-existent ID",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -455,33 +553,57 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 116,
-                      "errors": [],
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "failed",
+                      "duration": 1079,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:69:45",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                          "column": 45,
+                          "line": 69
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 67 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m             }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m         }\n \u001b[90m 71 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                            "column": 45,
+                            "line": 69
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 67 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m             }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m         }\n \u001b[90m 71 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:69:45\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "\n[Negative Test] Get non-existent user 99999999 failed as expected\n"
                         },
                         {
-                          "text": "Error Status: \u001b[33m404\u001b[39m\n"
+                          "text": "Error Status: \u001b[33m500\u001b[39m\n"
                         },
                         {
-                          "text": "Status Text: Not Found\n"
+                          "text": "Status Text: Internal Server Error\n"
                         },
                         {
-                          "text": "Error Response: {\n  \"message\": \"Resource not found\"\n}\n"
+                          "text": "Error Response: {\n  \"status\": 500,\n  \"error\": \"Internal Server Error\"\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:07.088Z",
+                      "startTime": "2026-03-12T09:02:55.271Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                        "column": 45,
+                        "line": 69
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "17fc41568215779711a6-c4397450d0271abe3097",
@@ -491,7 +613,7 @@
             },
             {
               "title": "should fail to update user with invalid gender",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -502,42 +624,44 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 311,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[Negative Test] Created test user with ID: 8091903\n"
+                      "workerIndex": 8,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 544,
+                      "error": {
+                        "message": "APIError: API Error: Internal Server Error",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:83:29",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "column": 23,
+                          "line": 61
                         },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
                         {
-                          "text": "\n[Negative Test] Update user with invalid gender failed as expected\n"
-                        },
-                        {
-                          "text": "Error Status: \u001b[33m422\u001b[39m\n"
-                        },
-                        {
-                          "text": "Error Details: [\n  {\n    \"field\": \"gender\",\n    \"message\": \"can't be blank, can be male of female\"\n  }\n]\n"
-                        },
-                        {
-                          "text": "Invalid Field: gender\n"
-                        },
-                        {
-                          "text": "Error Message: can't be blank, can be male of female\n"
-                        },
-                        {
-                          "text": "[Negative Test] Cleaned up - deleted user with ID: 8091903\n"
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "column": 23,
+                            "line": 61
+                          },
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:83:29\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:07.104Z",
+                      "startTime": "2026-03-12T09:02:57.000Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "column": 23,
+                        "line": 61
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "17fc41568215779711a6-cec29624b401180e5b6b",
@@ -547,7 +671,7 @@
             },
             {
               "title": "should fail to delete non-existent user",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -558,33 +682,57 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 9,
                       "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 113,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 779,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:126:49",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                          "column": 49,
+                          "line": 126
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 124 |\u001b[39m                     console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 125 |\u001b[39m                 }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 126 |\u001b[39m                 expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 127 |\u001b[39m             } \u001b[36melse\u001b[39m {\n \u001b[90m 128 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'Unexpected error:'\u001b[39m\u001b[33m,\u001b[39m error)\u001b[33m;\u001b[39m\n \u001b[90m 129 |\u001b[39m                 \u001b[36mthrow\u001b[39m error\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                            "column": 49,
+                            "line": 126
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 124 |\u001b[39m                     console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 125 |\u001b[39m                 }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 126 |\u001b[39m                 expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 127 |\u001b[39m             } \u001b[36melse\u001b[39m {\n \u001b[90m 128 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'Unexpected error:'\u001b[39m\u001b[33m,\u001b[39m error)\u001b[33m;\u001b[39m\n \u001b[90m 129 |\u001b[39m                 \u001b[36mthrow\u001b[39m error\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:126:49\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "\n[Negative Test] Delete non-existent user 99999999 failed as expected\n"
                         },
                         {
-                          "text": "Error Status: \u001b[33m404\u001b[39m\n"
+                          "text": "Error Status: \u001b[33m500\u001b[39m\n"
                         },
                         {
-                          "text": "Status Text: Not Found\n"
+                          "text": "Status Text: Internal Server Error\n"
                         },
                         {
-                          "text": "Error Response: {\n  \"message\": \"Resource not found\"\n}\n"
+                          "text": "Error Response: {\n  \"status\": 500,\n  \"error\": \"Internal Server Error\"\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:07.255Z",
+                      "startTime": "2026-03-12T09:02:57.019Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                        "column": 49,
+                        "line": 126
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "17fc41568215779711a6-9fb5f93f8229a01130f9",
@@ -594,7 +742,7 @@
             },
             {
               "title": "should fail to create user with duplicate email",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -605,42 +753,44 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 377,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[Negative Test] Created first user with ID: 8091904\n"
+                      "workerIndex": 10,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 739,
+                      "error": {
+                        "message": "APIError: API Error: Internal Server Error",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:146:29",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "column": 23,
+                          "line": 61
                         },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
                         {
-                          "text": "\n[Negative Test] Create user with duplicate email failed as expected\n"
-                        },
-                        {
-                          "text": "Error Status: \u001b[33m422\u001b[39m\n"
-                        },
-                        {
-                          "text": "Error Details: [\n  {\n    \"field\": \"email\",\n    \"message\": \"has already been taken\"\n  }\n]\n"
-                        },
-                        {
-                          "text": "Duplicate Field: email\n"
-                        },
-                        {
-                          "text": "Error Message: has already been taken\n"
-                        },
-                        {
-                          "text": "[Negative Test] Cleaned up - deleted user with ID: 8091904\n"
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "column": 23,
+                            "line": 61
+                          },
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:146:29\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:07.467Z",
+                      "startTime": "2026-03-12T09:02:57.022Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "column": 23,
+                        "line": 61
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "17fc41568215779711a6-e4b7f1eed7dd98d79d5e",
@@ -650,7 +800,7 @@
             },
             {
               "title": "should fail to update non-existent user",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -661,33 +811,57 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 147,
-                      "errors": [],
+                      "workerIndex": 11,
+                      "parallelIndex": 7,
+                      "status": "failed",
+                      "duration": 649,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:197:45",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                          "column": 45,
+                          "line": 197
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 195 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 196 |\u001b[39m             }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 197 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 198 |\u001b[39m         }\n \u001b[90m 199 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 200 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                            "column": 45,
+                            "line": 197
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 195 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 196 |\u001b[39m             }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 197 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 198 |\u001b[39m         }\n \u001b[90m 199 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 200 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:197:45\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "\n[Negative Test] Update non-existent user 99999999 failed as expected\n"
                         },
                         {
-                          "text": "Error Status: \u001b[33m404\u001b[39m\n"
+                          "text": "Error Status: \u001b[33m500\u001b[39m\n"
                         },
                         {
-                          "text": "Status Text: Not Found\n"
+                          "text": "Status Text: Internal Server Error\n"
                         },
                         {
-                          "text": "Error Response: {\n  \"message\": \"Resource not found\"\n}\n"
+                          "text": "Error Response: {\n  \"status\": 500,\n  \"error\": \"Internal Server Error\"\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:07.536Z",
+                      "startTime": "2026-03-12T09:02:57.067Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                        "column": 45,
+                        "line": 197
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "17fc41568215779711a6-ff9b0925283184d22b09",
@@ -714,7 +888,7 @@
           "specs": [
             {
               "title": "should create a post for a user",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -725,30 +899,44 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 12,
                       "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 242,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Created user with ID 8091905 for post tests.\n"
+                      "status": "failed",
+                      "duration": 0,
+                      "error": {
+                        "message": "APIError: API Error: Internal Server Error",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.posts.test.ts:24:29",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "column": 23,
+                          "line": 61
                         },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
                         {
-                          "text": "Created post with ID 236050 for user 8091905.\n"
-                        },
-                        {
-                          "text": "Cleaned up: Deleted user with ID 8091905.\n"
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "column": 23,
+                            "line": 61
+                          },
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.posts.test.ts:24:29\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:07.548Z",
+                      "startTime": "2026-03-12T09:02:57.137Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "column": 23,
+                        "line": 61
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "13df41f524bbd3718808-890d766def03084ab66d",
@@ -758,7 +946,7 @@
             },
             {
               "title": "should retrieve all posts for a user",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -769,30 +957,44 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 371,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Created user with ID 8091906 for post tests.\n"
+                      "workerIndex": 13,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 0,
+                      "error": {
+                        "message": "APIError: API Error: Internal Server Error",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.posts.test.ts:24:29",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "column": 23,
+                          "line": 61
                         },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
                         {
-                          "text": "Retrieved 2 posts for user 8091906.\n"
-                        },
-                        {
-                          "text": "Cleaned up: Deleted user with ID 8091906.\n"
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "column": 23,
+                            "line": 61
+                          },
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.posts.test.ts:24:29\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:07.726Z",
+                      "startTime": "2026-03-12T09:02:57.258Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "column": 23,
+                        "line": 61
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "13df41f524bbd3718808-54ec623f3b30b8fa87f7",
@@ -819,7 +1021,7 @@
           "specs": [
             {
               "title": "should create a new user",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -830,24 +1032,44 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 14,
                       "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 151,
-                      "errors": [],
-                      "stdout": [
+                      "status": "failed",
+                      "duration": 717,
+                      "error": {
+                        "message": "APIError: API Error: Internal Server Error",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.users.test.ts:19:29",
+                        "location": {
+                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "column": 23,
+                          "line": 61
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
                         {
-                          "text": "Created user with ID: 8091907\n"
+                          "location": {
+                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "column": 23,
+                            "line": 61
+                          },
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.users.test.ts:19:29\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:07.880Z",
+                      "startTime": "2026-03-12T09:02:57.274Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "column": 23,
+                        "line": 61
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "4de4fbd6539b09a9e4a7-e196683d14de6bafe4b2",
@@ -866,7 +1088,7 @@
                     {
                       "type": "skip",
                       "location": {
-                        "file": "D:\\HELLO\\src\\tests\\gorest-api.users.test.ts",
+                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.users.test.ts",
                         "line": 30,
                         "column": 10
                       }
@@ -877,25 +1099,16 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
                       "status": "skipped",
                       "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:08.064Z",
-                      "annotations": [
-                        {
-                          "type": "skip",
-                          "location": {
-                            "file": "D:\\HELLO\\src\\tests\\gorest-api.users.test.ts",
-                            "line": 30,
-                            "column": 10
-                          }
-                        }
-                      ],
+                      "startTime": "2026-03-12T09:02:58.005Z",
+                      "annotations": [],
                       "attachments": []
                     }
                   ],
@@ -920,20 +1133,20 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 132,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:08.065Z",
+                      "startTime": "2026-03-12T09:02:58.007Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "4de4fbd6539b09a9e4a7-546e8010f17803dbfe56",
@@ -954,24 +1167,20 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 294,
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Deleted user with ID: 8091907\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-28T06:33:08.225Z",
+                      "startTime": "2026-03-12T09:02:58.008Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "4de4fbd6539b09a9e4a7-8b4585fe04e58435af06",
@@ -986,11 +1195,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-28T06:33:02.081Z",
-    "duration": 16175.936999999998,
-    "expected": 16,
-    "skipped": 1,
-    "unexpected": 1,
+    "startTime": "2026-03-12T09:02:54.340Z",
+    "duration": 11852.864,
+    "expected": 0,
+    "skipped": 3,
+    "unexpected": 15,
     "flaky": 0
   }
 }
