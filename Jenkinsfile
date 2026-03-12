@@ -5,6 +5,10 @@ pipeline {
         NODE_VERSION = "22" // match your repo's Node.js version
     }
 
+    triggers {
+        pollSCM('H/5 * * * *')  // Poll for changes every 5 minutes
+    }
+
     stages {
         stage('Checkout') {
             steps {

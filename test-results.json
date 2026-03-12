@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\MY\\APIPlay\\playwright.config.ts",
-    "rootDir": "C:/MY/APIPlay/src/tests",
+    "configFile": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\playwright.config.ts",
+    "rootDir": "C:/Users/shakt/Desktop/APIPlay-1/src/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 8
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -33,15 +33,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/MY/APIPlay/test-results",
+        "outputDir": "C:/Users/shakt/Desktop/APIPlay-1/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 8
+          "actualWorkers": 4
         },
         "id": "",
         "name": "",
-        "testDir": "C:/MY/APIPlay/src/tests",
+        "testDir": "C:/Users/shakt/Desktop/APIPlay-1/src/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -53,7 +53,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.55.0",
-    "workers": 8,
+    "workers": 4,
     "webServer": null
   },
   "suites": [
@@ -86,12 +86,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 10599,
+                      "duration": 9236,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('textarea[name=\"q1\"]')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[name=\"q1\"]')\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('textarea[name=\"q1\"]')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[name=\"q1\"]')\u001b[22m\n\n    at C:\\MY\\APIPlay\\src\\tests\\demoUI.spec.ts:24:31",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('textarea[name=\"q1\"]')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[name=\"q1\"]')\u001b[22m\n\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\demoUI.spec.ts:24:31",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\tests\\demoUI.spec.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\demoUI.spec.ts",
                           "column": 31,
                           "line": 24
                         },
@@ -100,11 +100,11 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\tests\\demoUI.spec.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\demoUI.spec.ts",
                             "column": 31,
                             "line": 24
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('textarea[name=\"q1\"]')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[name=\"q1\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 22 |\u001b[39m     \u001b[90m// Verify search input is visible\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'textarea[name=\"q1\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m searchInput\u001b[33m.\u001b[39mfill(\u001b[32m'Playwright Testing'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\demoUI.spec.ts:24:31\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('textarea[name=\"q1\"]')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('textarea[name=\"q1\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 22 |\u001b[39m     \u001b[90m// Verify search input is visible\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'textarea[name=\"q1\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m searchInput\u001b[33m.\u001b[39mfill(\u001b[32m'Playwright Testing'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\demoUI.spec.ts:24:31\u001b[22m"
                         }
                       ],
                       "stdout": [
@@ -114,17 +114,17 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:55.214Z",
+                      "startTime": "2026-03-12T18:26:14.327Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "C:\\MY\\APIPlay\\test-results\\demoUI-Google-Search-UI-Tests-should-load-Google-homepage\\error-context.md"
+                          "path": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\test-results\\demoUI-Google-Search-UI-Tests-should-load-Google-homepage\\error-context.md"
                         }
                       ],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\tests\\demoUI.spec.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\demoUI.spec.ts",
                         "column": 31,
                         "line": 24
                       }
@@ -171,12 +171,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 1048,
+                      "duration": 583,
                       "error": {
                         "message": "APIError: API Error: Internal Server Error",
-                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:32:29",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:32:29",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                           "column": 23,
                           "line": 61
                         },
@@ -185,21 +185,21 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                             "column": 23,
                             "line": 61
                           },
-                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:32:29\u001b[22m"
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:32:29\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:55.232Z",
+                      "startTime": "2026-03-12T18:26:14.334Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                         "column": 23,
                         "line": 61
                       }
@@ -229,12 +229,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 1185,
+                      "duration": 568,
                       "error": {
                         "message": "APIError: API Error: Internal Server Error",
-                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:47:24",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\n    at createTestUser (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:15:25)\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:47:24",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                           "column": 23,
                           "line": 61
                         },
@@ -243,21 +243,21 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                             "column": 23,
                             "line": 61
                           },
-                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:47:24\u001b[22m"
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at createTestUser (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:15:25)\u001b[22m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:47:24\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:55.235Z",
+                      "startTime": "2026-03-12T18:26:14.356Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                         "column": 23,
                         "line": 61
                       }
@@ -287,12 +287,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "failed",
-                      "duration": 1325,
+                      "duration": 578,
                       "error": {
                         "message": "APIError: API Error: Internal Server Error",
-                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:63:24",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\n    at createTestUser (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:15:25)\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:63:24",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                           "column": 23,
                           "line": 61
                         },
@@ -301,21 +301,21 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                             "column": 23,
                             "line": 61
                           },
-                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:63:24\u001b[22m"
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at createTestUser (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:15:25)\u001b[22m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:63:24\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:55.257Z",
+                      "startTime": "2026-03-12T18:26:14.349Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                         "column": 23,
                         "line": 61
                       }
@@ -342,15 +342,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 1030,
+                      "duration": 288,
                       "error": {
                         "message": "APIError: API Error: Internal Server Error",
-                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:84:24",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\n    at createTestUser (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:15:25)\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:84:24",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                           "column": 23,
                           "line": 61
                         },
@@ -359,21 +359,21 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                             "column": 23,
                             "line": 61
                           },
-                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at createTestUser (C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:15:25)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.individual.test.ts:84:24\u001b[22m"
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at createTestUser (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:15:25)\u001b[22m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.individual.test.ts:84:24\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:55.262Z",
+                      "startTime": "2026-03-12T18:26:16.487Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                         "column": 23,
                         "line": 61
                       }
@@ -417,15 +417,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 1021,
+                      "duration": 246,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m422\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m422\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:23:45",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m422\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:23:45",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                           "column": 45,
                           "line": 23
                         },
@@ -434,11 +434,11 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                             "column": 45,
                             "line": 23
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m422\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 21 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Details:'\u001b[39m\u001b[33m,\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(errorBody\u001b[33m,\u001b[39m \u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m             \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m422\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m             expect(errorBody[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mfield)\u001b[33m.\u001b[39mtoBe(\u001b[32m'email'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m             expect(errorBody[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'invalid'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m         }\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:23:45\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m422\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 21 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Details:'\u001b[39m\u001b[33m,\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(errorBody\u001b[33m,\u001b[39m \u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m             \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m422\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m             expect(errorBody[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mfield)\u001b[33m.\u001b[39mtoBe(\u001b[32m'email'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m             expect(errorBody[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mmessage)\u001b[33m.\u001b[39mtoContain(\u001b[32m'invalid'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m         }\u001b[0m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:23:45\u001b[22m"
                         }
                       ],
                       "stdout": [
@@ -454,11 +454,11 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:55.257Z",
+                      "startTime": "2026-03-12T18:26:16.495Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                         "column": 45,
                         "line": 23
                       }
@@ -485,15 +485,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 6,
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
                       "status": "failed",
-                      "duration": 1289,
+                      "duration": 240,
                       "error": {
                         "message": "TypeError: errorBody.map is not a function",
-                        "stack": "TypeError: errorBody.map is not a function\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:43:54",
+                        "stack": "TypeError: errorBody.map is not a function\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:43:54",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                           "column": 54,
                           "line": 43
                         },
@@ -502,11 +502,11 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                             "column": 54,
                             "line": 43
                           },
-                          "message": "TypeError: errorBody.map is not a function\n\n\u001b[0m \u001b[90m 41 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Status:'\u001b[39m\u001b[33m,\u001b[39m error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Response:'\u001b[39m\u001b[33m,\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(errorBody\u001b[33m,\u001b[39m \u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Missing Fields:'\u001b[39m\u001b[33m,\u001b[39m errorBody\u001b[33m.\u001b[39mmap((err\u001b[33m:\u001b[39m any) \u001b[33m=>\u001b[39m err\u001b[33m.\u001b[39mfield)\u001b[33m.\u001b[39mjoin(\u001b[32m', '\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m             \n \u001b[90m 45 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m422\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m             expect(errorBody)\u001b[33m.\u001b[39mtoContainEqual(expect\u001b[33m.\u001b[39mobjectContaining({\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:43:54\u001b[22m"
+                          "message": "TypeError: errorBody.map is not a function\n\n\u001b[0m \u001b[90m 41 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Status:'\u001b[39m\u001b[33m,\u001b[39m error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Error Response:'\u001b[39m\u001b[33m,\u001b[39m \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(errorBody\u001b[33m,\u001b[39m \u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m'Missing Fields:'\u001b[39m\u001b[33m,\u001b[39m errorBody\u001b[33m.\u001b[39mmap((err\u001b[33m:\u001b[39m any) \u001b[33m=>\u001b[39m err\u001b[33m.\u001b[39mfield)\u001b[33m.\u001b[39mjoin(\u001b[32m', '\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m             \n \u001b[90m 45 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m422\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m             expect(errorBody)\u001b[33m.\u001b[39mtoContainEqual(expect\u001b[33m.\u001b[39mobjectContaining({\u001b[0m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:43:54\u001b[22m"
                         }
                       ],
                       "stdout": [
@@ -522,11 +522,11 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:55.274Z",
+                      "startTime": "2026-03-12T18:26:16.493Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                         "column": 54,
                         "line": 43
                       }
@@ -554,14 +554,14 @@
                   "results": [
                     {
                       "workerIndex": 7,
-                      "parallelIndex": 7,
+                      "parallelIndex": 3,
                       "status": "failed",
-                      "duration": 1079,
+                      "duration": 213,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:69:45",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:69:45",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                           "column": 45,
                           "line": 69
                         },
@@ -570,11 +570,11 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                             "column": 45,
                             "line": 69
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 67 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m             }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m         }\n \u001b[90m 71 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:69:45\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 67 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m             }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 69 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 70 |\u001b[39m         }\n \u001b[90m 71 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:69:45\u001b[22m"
                         }
                       ],
                       "stdout": [
@@ -593,11 +593,11 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:55.271Z",
+                      "startTime": "2026-03-12T18:26:17.584Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                         "column": 45,
                         "line": 69
                       }
@@ -625,14 +625,14 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 5,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 544,
+                      "duration": 247,
                       "error": {
                         "message": "APIError: API Error: Internal Server Error",
-                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:83:29",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:83:29",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                           "column": 23,
                           "line": 61
                         },
@@ -641,21 +641,21 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                             "column": 23,
                             "line": 61
                           },
-                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:83:29\u001b[22m"
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:83:29\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:57.000Z",
+                      "startTime": "2026-03-12T18:26:17.579Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                         "column": 23,
                         "line": 61
                       }
@@ -683,14 +683,14 @@
                   "results": [
                     {
                       "workerIndex": 9,
-                      "parallelIndex": 1,
+                      "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 779,
+                      "duration": 202,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:126:49",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:126:49",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                           "column": 49,
                           "line": 126
                         },
@@ -699,11 +699,11 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                             "column": 49,
                             "line": 126
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 124 |\u001b[39m                     console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 125 |\u001b[39m                 }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 126 |\u001b[39m                 expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 127 |\u001b[39m             } \u001b[36melse\u001b[39m {\n \u001b[90m 128 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'Unexpected error:'\u001b[39m\u001b[33m,\u001b[39m error)\u001b[33m;\u001b[39m\n \u001b[90m 129 |\u001b[39m                 \u001b[36mthrow\u001b[39m error\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:126:49\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 124 |\u001b[39m                     console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 125 |\u001b[39m                 }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 126 |\u001b[39m                 expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 127 |\u001b[39m             } \u001b[36melse\u001b[39m {\n \u001b[90m 128 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'Unexpected error:'\u001b[39m\u001b[33m,\u001b[39m error)\u001b[33m;\u001b[39m\n \u001b[90m 129 |\u001b[39m                 \u001b[36mthrow\u001b[39m error\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:126:49\u001b[22m"
                         }
                       ],
                       "stdout": [
@@ -722,11 +722,11 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:57.019Z",
+                      "startTime": "2026-03-12T18:26:17.627Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                         "column": 49,
                         "line": 126
                       }
@@ -754,14 +754,14 @@
                   "results": [
                     {
                       "workerIndex": 10,
-                      "parallelIndex": 4,
+                      "parallelIndex": 3,
                       "status": "failed",
-                      "duration": 739,
+                      "duration": 265,
                       "error": {
                         "message": "APIError: API Error: Internal Server Error",
-                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:146:29",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:146:29",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                           "column": 23,
                           "line": 61
                         },
@@ -770,21 +770,21 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                             "column": 23,
                             "line": 61
                           },
-                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:146:29\u001b[22m"
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:146:29\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:57.022Z",
+                      "startTime": "2026-03-12T18:26:18.657Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                         "column": 23,
                         "line": 61
                       }
@@ -812,14 +812,14 @@
                   "results": [
                     {
                       "workerIndex": 11,
-                      "parallelIndex": 7,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 649,
+                      "duration": 233,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:197:45",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:197:45",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                           "column": 45,
                           "line": 197
                         },
@@ -828,11 +828,11 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                             "column": 45,
                             "line": 197
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 195 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 196 |\u001b[39m             }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 197 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 198 |\u001b[39m         }\n \u001b[90m 199 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 200 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts:197:45\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[0m \u001b[90m 195 |\u001b[39m                 console\u001b[33m.\u001b[39mlog(\u001b[32m'No error body received'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 196 |\u001b[39m             }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 197 |\u001b[39m             expect(error\u001b[33m.\u001b[39mresponse\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 198 |\u001b[39m         }\n \u001b[90m 199 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 200 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts:197:45\u001b[22m"
                         }
                       ],
                       "stdout": [
@@ -851,11 +851,11 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:57.067Z",
+                      "startTime": "2026-03-12T18:26:18.685Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.negative.test.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.negative.test.ts",
                         "column": 45,
                         "line": 197
                       }
@@ -905,9 +905,9 @@
                       "duration": 0,
                       "error": {
                         "message": "APIError: API Error: Internal Server Error",
-                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.posts.test.ts:24:29",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.posts.test.ts:24:29",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                           "column": 23,
                           "line": 61
                         },
@@ -916,21 +916,21 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                             "column": 23,
                             "line": 61
                           },
-                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.posts.test.ts:24:29\u001b[22m"
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.posts.test.ts:24:29\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:57.137Z",
+                      "startTime": "2026-03-12T18:26:18.703Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                         "column": 23,
                         "line": 61
                       }
@@ -958,14 +958,14 @@
                   "results": [
                     {
                       "workerIndex": 13,
-                      "parallelIndex": 6,
+                      "parallelIndex": 3,
                       "status": "failed",
                       "duration": 0,
                       "error": {
                         "message": "APIError: API Error: Internal Server Error",
-                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.posts.test.ts:24:29",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.posts.test.ts:24:29",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                           "column": 23,
                           "line": 61
                         },
@@ -974,21 +974,21 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                             "column": 23,
                             "line": 61
                           },
-                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.posts.test.ts:24:29\u001b[22m"
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.posts.test.ts:24:29\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:57.258Z",
+                      "startTime": "2026-03-12T18:26:19.665Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                         "column": 23,
                         "line": 61
                       }
@@ -1033,14 +1033,14 @@
                   "results": [
                     {
                       "workerIndex": 14,
-                      "parallelIndex": 3,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 717,
+                      "duration": 225,
                       "error": {
                         "message": "APIError: API Error: Internal Server Error",
-                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\n    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.users.test.ts:19:29",
+                        "stack": "APIError: API Error: Internal Server Error\n    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\n    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\n    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.users.test.ts:19:29",
                         "location": {
-                          "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                          "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                           "column": 23,
                           "line": 61
                         },
@@ -1049,21 +1049,21 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                            "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                             "column": 23,
                             "line": 61
                           },
-                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\MY\\APIPlay\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\MY\\APIPlay\\src\\tests\\gorest-api.users.test.ts:19:29\u001b[22m"
+                          "message": "APIError: API Error: Internal Server Error\n\n\u001b[90m   at \u001b[39m..\\base\\APIClient.ts:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRateLimitError\u001b[39m(response)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m             \u001b[36mdefault\u001b[39m\u001b[33m:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m                 \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAPIError\u001b[39m(\u001b[32m`API Error: ${response.statusText()}`\u001b[39m\u001b[33m,\u001b[39m response\u001b[33m,\u001b[39m errors)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m         }\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\u001b[0m\n\u001b[2m    at GoRestService.handleErrorResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:61:23)\u001b[22m\n\u001b[2m    at GoRestService.handleResponse (C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts:67:13)\u001b[22m\n\u001b[2m    at C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.users.test.ts:19:29\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:57.274Z",
+                      "startTime": "2026-03-12T18:26:19.685Z",
                       "annotations": [],
                       "attachments": [],
                       "errorLocation": {
-                        "file": "C:\\MY\\APIPlay\\src\\base\\APIClient.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\base\\APIClient.ts",
                         "column": 23,
                         "line": 61
                       }
@@ -1088,7 +1088,7 @@
                     {
                       "type": "skip",
                       "location": {
-                        "file": "C:\\MY\\APIPlay\\src\\tests\\gorest-api.users.test.ts",
+                        "file": "C:\\Users\\shakt\\Desktop\\APIPlay-1\\src\\tests\\gorest-api.users.test.ts",
                         "line": 30,
                         "column": 10
                       }
@@ -1107,7 +1107,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:58.005Z",
+                      "startTime": "2026-03-12T18:26:19.929Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1141,7 +1141,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:58.007Z",
+                      "startTime": "2026-03-12T18:26:19.929Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1175,7 +1175,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-12T09:02:58.008Z",
+                      "startTime": "2026-03-12T18:26:19.930Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1195,8 +1195,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-12T09:02:54.340Z",
-    "duration": 11852.864,
+    "startTime": "2026-03-12T18:26:12.964Z",
+    "duration": 11236.929,
     "expected": 0,
     "skipped": 3,
     "unexpected": 15,
