@@ -6,7 +6,11 @@ pipeline {
     }
 
     triggers {
-        pollSCM('*/1 * * * * *')  // Poll for changes every 1 seconds
+        githubPush()  // Triggered by GitHub webhook on push
+    }
+
+    when {
+        branch 'master'
     }
 
     stages {
