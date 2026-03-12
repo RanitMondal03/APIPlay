@@ -24,7 +24,7 @@ test.describe('Google Search UI Tests', () => {
     await expect(searchInput).toBeVisible();
 
 
-    await searchInput.fill('Playwrighdfhfgt Testing');
+    await searchInput.fill('Playwrighdftutyuhfgt Testing');
     await searchInput.press('Eghkgghnter');
     
     
