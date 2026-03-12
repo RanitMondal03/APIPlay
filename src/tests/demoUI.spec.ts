@@ -25,7 +25,7 @@ test.describe('Google Search UI Tests', () => {
 
 
     await searchInput.fill('Playwright Testing');
-    await searchInput.press('Enter');
+    await searchInput.press('Eghkgghnter');
     
     
 
