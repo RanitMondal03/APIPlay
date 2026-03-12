@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/RanitMondal03/APIPlay.git'
+                git branch: 'master', url: 'https://github.com/RanitMondal03/APIPlay.git', clean: true
             }
         }
 
